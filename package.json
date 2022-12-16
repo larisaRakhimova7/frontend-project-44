@@ -1,0 +1,26 @@
+{
+  "name": "@hexlet/code",
+  "version": "1.0.0",
+  "description": "[![Actions Status](https://github.com/larisaRakhimova7/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/larisaRakhimova7/frontend-project-44/actions)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/larisaRakhimova7/frontend-project-44.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/larisaRakhimova7/frontend-project-44/issues"
+  },
+  "homepage": "https://github.com/larisaRakhimova7/frontend-project-44#readme",
+  "type": "module",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+"bin": {
+  "brain-games": "bin/brain-games.js"
+}
+}
