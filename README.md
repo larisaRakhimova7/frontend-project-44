@@ -4,19 +4,3 @@
 
 https://asciinema.org/a/AQox2vsiaVJmC4I90tkvdbqhc
 
-<html>
-<head>
-  <link rel="stylesheet" type="text/css" href="asciinema-player.css" />
-</head>
-<body>
-  <div id="player"></div>
-  <script src="asciinema-player.min.js"></script>
-  <script>
-    AsciinemaPlayer.create(
-      '546743.cast',
-      document.getElementById('player'),
-      { cols: 98, rows: 34 }
-    );
-  </script>
-</body>
-</html
