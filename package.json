@@ -22,7 +22,8 @@
     "readline-sync": "^1.4.10"
   },
   "bin": {
-    "brain-games": "bin/brain-games.js"
+    "brain-games": "bin/brain-games.js",
+    "brain-even": "bin/brain-even.js"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.46.1",
