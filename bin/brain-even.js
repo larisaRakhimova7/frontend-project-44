@@ -1,3 +1,4 @@
-import even from '../src/even.js';
+#!/usr/bin/env node
+import startEven from '../src/games/even.js';
 
-even();
+startEven();

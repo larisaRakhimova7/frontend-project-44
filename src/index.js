@@ -11,8 +11,8 @@ const playGame = (game, task) => {
     console.log(questionGame[0]);
     const yourAnswer = readlineSync.question('Your answer: ');
     if (questionGame[1] !== yourAnswer) {
-      const trueEven = questionGame[1];
-      console.log(`'${yourAnswer}' is wrong answer ;(. Correct answer was '${trueEven}'.`);
+      const trueAnswer = questionGame[1];
+      console.log(`'${yourAnswer}' is wrong answer ;(. Correct answer was '${trueAnswer}'.`);
       console.log(`Let's try again, ${userName}`);
       return false;
     }
