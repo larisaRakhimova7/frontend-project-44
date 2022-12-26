@@ -6,24 +6,26 @@ const checkCalc = () => {
   const calc = [];
   const num1 = randomNumber(30);
   const num2 = randomNumber(30);
-  const operations = ['+', '-', '*'];
-  const randomOperations = operations[randomNumber(3) - 1];
-
-  calc.push(`Question: ${num1} ${randomOperations} ${num2}`);
-
-  switch (randomOperations) {
-    case 0:
-      calc.push(num1 + num2);
+  const arrayOperations = ['+', '-', '*'];
+  const operation = arrayOperations[randomNumber(3) - 1];
+  const expression = `Question: ${num1} ${operation} ${num2}`;
+  calc.push(expression);
+  let trueAnswer;
+  switch (operation) {
+    case '+':
+      trueAnswer = num1 + num2;
       break;
-    case 1:
-      calc.push(num1 - num2);
+    case '-':
+      trueAnswer = num1 - num2;
       break;
-    case 3:
-      calc.push(num1 * num2);
+    case '*':
+      trueAnswer = num1 * num2;
       break;
     default:
       return 'error';
   }
+  const trueAnswerString = String(trueAnswer);
+  calc.push(trueAnswerString);
   return calc;
 };
 const startCalc = () => {

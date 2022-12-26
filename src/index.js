@@ -7,11 +7,11 @@ console.log(`Hello, ${userName}!`);
 const playGame = (game, task) => {
   console.log(task);
   for (let i = 1; i <= 3; i += 1) {
-    const questionGame = game();
-    console.log(questionGame[0]);
+    const paramGame = game();
+    console.log(paramGame[0]);
     const yourAnswer = readlineSync.question('Your answer: ');
-    if (questionGame[1] !== yourAnswer) {
-      const trueAnswer = questionGame[1];
+    const trueAnswer = paramGame[1];
+    if (trueAnswer !== yourAnswer) {
       console.log(`'${yourAnswer}' is wrong answer ;(. Correct answer was '${trueAnswer}'.`);
       console.log(`Let's try again, ${userName}`);
       return false;
