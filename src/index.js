@@ -13,7 +13,7 @@ const playGame = (game, task) => {
     const trueAnswer = paramGame[1];
     if (trueAnswer !== yourAnswer) {
       console.log(`'${yourAnswer}' is wrong answer ;(. Correct answer was '${trueAnswer}'.`);
-      console.log(`Let's try again, ${userName}`);
+      console.log(`Let's try again, ${userName}!`);
       return false;
     }
     console.log('Correct!');
