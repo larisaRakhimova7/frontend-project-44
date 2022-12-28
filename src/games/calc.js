@@ -8,7 +8,7 @@ const checkCalc = () => {
   const num2 = randomNumber(30);
   const arrayOperations = ['+', '-', '*'];
   const operation = arrayOperations[randomNumber(3) - 1];
-  const expression = `Question: ${num1} ${operation} ${num2}`;
+  const expression = `${num1} ${operation} ${num2}`;
   calc.push(expression);
   let trueAnswer;
   switch (operation) {

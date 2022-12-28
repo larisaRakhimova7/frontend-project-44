@@ -8,7 +8,7 @@ const checkGcd = () => {
   const num1 = randomNumber(30);
   const num2 = randomNumber(30);
 
-  gcd.push(`Question: ${num1} ${num2}`);
+  gcd.push(`${num1} ${num2}`);
   let divisor;
   if (num1 < num2) {
     divisor = num1;

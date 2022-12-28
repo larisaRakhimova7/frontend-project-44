@@ -8,7 +8,7 @@ const playGame = (game, task) => {
   console.log(task);
   for (let i = 1; i <= 3; i += 1) {
     const paramGame = game();
-    console.log(paramGame[0]);
+    console.log(`Question: ${paramGame[0]}`);
     const yourAnswer = readlineSync.question('Your answer: ');
     const trueAnswer = paramGame[1];
     if (trueAnswer !== yourAnswer) {

@@ -5,7 +5,7 @@ const task = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 const checkPrime = () => {
   const prime = [];
   const num = randomNumber(30);
-  const expression = `Question: ${num}`;
+  const expression = num;
   let trueAnswer = '';
   if (num === 1) {
     trueAnswer = 'yes';

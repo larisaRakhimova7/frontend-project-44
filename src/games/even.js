@@ -6,7 +6,7 @@ const task = 'Answer "yes" if the number is even, otherwise answer "no".';
 const checkEven = () => {
   const even = [];
   const randomNum = randomNumber(100);
-  even.push(`Question: ${randomNum}`);
+  even.push(randomNum);
   if (randomNum % 2 === 0) {
     even.push('yes');
   } else even.push('no');
