@@ -18,7 +18,7 @@ const playGame = (game, task) => {
     }
     console.log('Correct!');
   }
-  console.log(`Congratulations, ${userName}`);
+  console.log(`Congratulations, ${userName}!`);
   return true;
 };
 
