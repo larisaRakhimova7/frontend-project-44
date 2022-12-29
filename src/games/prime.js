@@ -1,21 +1,24 @@
 import playGame from '../index.js';
 import randomNumber from '../utils.js';
 
+const getTrueAnswer = (num) => {
+  if (num < 2) {
+    return 'yes';
+  }
+  for (let i = 2; i < num; i += 1) {
+    if (num % i === 0) {
+      return 'no';
+    }
+  }
+  return 'yes';
+};
 const task = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 const checkPrime = () => {
   const prime = [];
   const num = randomNumber();
   const expression = num;
-  let trueAnswer = '';
-  if ((num === 1) || (num === 2) || (num === 3)) {
-    trueAnswer = 'yes';
-  }
-  for (let i = num / 2; i > 1; i -= 1) {
-    if (num % i === 0) {
-      trueAnswer = 'no';
-    } else trueAnswer = 'yes';
-  }
   prime.push(expression);
+  const trueAnswer = getTrueAnswer(num);
   prime.push(trueAnswer);
   return prime;
 };
