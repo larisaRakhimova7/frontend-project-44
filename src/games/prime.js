@@ -1,10 +1,10 @@
 import playGame from '../index.js';
-import randomNumber from '../random.js';
+import randomNumber from '../utils.js';
 
 const task = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 const checkPrime = () => {
   const prime = [];
-  const num = randomNumber(30);
+  const num = randomNumber();
   const expression = num;
   let trueAnswer = '';
   if (num === 1) {

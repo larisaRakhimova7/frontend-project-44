@@ -1,14 +1,14 @@
 import playGame from '../index.js';
-import randomNumber from '../random.js';
+import randomNumber from '../utils.js';
 
 const task = 'Find the greatest common divisor of given numbers.';
 
-const checkGcd = () => {
-  const gcd = [];
-  const num1 = randomNumber(30);
-  const num2 = randomNumber(30);
+const checkGCD = () => {
+  const GCD = [];
+  const num1 = randomNumber();
+  const num2 = randomNumber();
 
-  gcd.push(`${num1} ${num2}`);
+  GCD.push(`${num1} ${num2}`);
   let divisor;
   if (num1 < num2) {
     divisor = num1;
@@ -18,16 +18,16 @@ const checkGcd = () => {
   while (divisor > 0) {
     if ((num1 % divisor === 0) && (num2 % divisor === 0)) {
       const stringDivisor = String(divisor);
-      gcd.push(stringDivisor);
+      GCD.push(stringDivisor);
     }
     divisor -= 1;
   }
 
-  return gcd;
+  return GCD;
 };
 
-const startGcd = () => {
-  playGame(checkGcd, task);
+const startGCD = () => {
+  playGame(checkGCD, task);
 };
 
-export default startGcd;
+export default startGCD;

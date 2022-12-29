@@ -1,10 +1,7 @@
 env:
   node: true
-  browser: true
-  commonjs: true
   es2021: true
 extends:
-  - plugin:react/recommended
   - airbnb-base
 overrides: []
 parserOptions:
@@ -13,7 +10,7 @@ plugins:
   - react
 rules:
   no-console: 0
-  import/extensions: # FIXME: remove when rule will be adjusted for new nodejs version
+  import/extensions:
     - error
     - ignorePackages
     - js: always

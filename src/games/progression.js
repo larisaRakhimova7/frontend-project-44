@@ -1,5 +1,5 @@
 import playGame from '../index.js';
-import randomNumber from '../random.js';
+import randomNumber from '../utils.js';
 
 const task = 'What number is missing in the progression?';
 
