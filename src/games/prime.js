@@ -7,7 +7,7 @@ const checkPrime = () => {
   const num = randomNumber();
   const expression = num;
   let trueAnswer = '';
-  if (num === 1) {
+  if ((num === 1) || (num === 2) || (num === 3)) {
     trueAnswer = 'yes';
   }
   for (let i = num / 2; i > 1; i -= 1) {
