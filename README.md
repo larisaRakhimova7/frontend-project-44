@@ -1,18 +1,18 @@
-№Welcome to the Brain Games!
+# Welcome to the Brain Games!
 
-System requirements and Installation guide:
+### System requirements and Installation guide:
 
-*The game can only be run on a Unix-like operating system.
+* The game can only be run on a Unix-like operating system.
 for example: Ubuntu 20.04.1 or higher
-*Node.js v13 or higher
+* Node.js v13 or higher
 
 To install "Brain-games", you need:
 
-*git clone https://github.com/seenerve/frontend-project-44
-*cd frontend-project-44
-*make install
-*npm ci
-*Choose your game.
+* git clone https://github.com/seenerve/frontend-project-44
+* cd frontend-project-44
+* make install
+* npm ci
+* Choose your game.
 
 Demonstrations.
 
@@ -20,7 +20,8 @@ Demonstrations.
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/larisaRakhimova7/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/larisaRakhimova7/frontend-project-44/actions)
 <a href="https://codeclimate.com/github/larisaRakhimova7/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/d97bd5a4b5f4294d5393/maintainability" /></a>
-[![asciicast](https://asciinema.org/a/RzjPDIdKU4b9WDKiauQGd3Acp.svg)](https://asciinema.org/a/RzjPDIdKU4b9WDKiauQGd3Acp)
+Install link
+[![asciicast](https://asciinema.org/a/1qS3s65mWpPxuPN6S56xsAjbO.svg)](https://asciinema.org/a/1qS3s65mWpPxuPN6S56xsAjbO)
 Brain-even. Loss
 [![asciicast](https://asciinema.org/a/2H6K5xhDBoyUAJXEREnqk6AYp.svg)](https://asciinema.org/a/2H6K5xhDBoyUAJXEREnqk6AYp)
 Brain-even. Win
