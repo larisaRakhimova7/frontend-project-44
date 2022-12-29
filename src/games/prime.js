@@ -3,9 +3,9 @@ import randomNumber from '../utils.js';
 
 const getTrueAnswer = (num) => {
   if (num < 2) {
-    return 'yes';
+    return 'no';
   }
-  for (let i = 2; i < num; i += 1) {
+  for (let i = 2; i < (num / 2); i += 1) {
     if (num % i === 0) {
       return 'no';
     }
