@@ -1,13 +1,13 @@
 import playGame from '../index.js';
-import randomNumber from '../utils.js';
+import getRandomIt from '../utils.js';
 
 const task = 'What is the result of the expression?';
 const checkCalc = () => {
   const calc = [];
-  const num1 = randomNumber(30);
-  const num2 = randomNumber(30);
+  const num1 = getRandomIt();
+  const num2 = getRandomIt();
   const arrayOperations = ['+', '-', '*'];
-  const operation = arrayOperations[randomNumber(3) - 1];
+  const operation = arrayOperations[getRandomIt(3) - 1];
   const expression = `${num1} ${operation} ${num2}`;
   calc.push(expression);
   let trueAnswer;

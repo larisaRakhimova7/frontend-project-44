@@ -1,11 +1,11 @@
 import playGame from '../index.js';
-import randomNumber from '../utils.js';
+import getRandomIt from '../utils.js';
 
 const getTrueAnswer = (num) => {
   if (num < 2) {
     return 'no';
   }
-  for (let i = 2; i < (num / 2); i += 1) {
+  for (let i = 2; i <= (num / 2); i += 1) {
     if (num % i === 0) {
       return 'no';
     }
@@ -15,7 +15,7 @@ const getTrueAnswer = (num) => {
 const task = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 const checkPrime = () => {
   const prime = [];
-  const num = randomNumber();
+  const num = getRandomIt();
   const expression = num;
   prime.push(expression);
   const trueAnswer = getTrueAnswer(num);

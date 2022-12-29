@@ -1,12 +1,12 @@
 import playGame from '../index.js';
-import randomNumber from '../utils.js';
+import getRandomIt from '../utils.js';
 
 const task = 'Find the greatest common divisor of given numbers.';
 
 const checkGCD = () => {
   const GCD = [];
-  const num1 = randomNumber();
-  const num2 = randomNumber();
+  const num1 = getRandomIt();
+  const num2 = getRandomIt();
 
   GCD.push(`${num1} ${num2}`);
   let divisor;

@@ -1,13 +1,13 @@
 import playGame from '../index.js';
-import randomNumber from '../utils.js';
+import getRandomIt from '../utils.js';
 
 const task = 'What number is missing in the progression?';
 
 const checkProgression = () => {
   const dataProgression = [];
-  const num = randomNumber(10);
-  const difference = randomNumber(5);
-  const index = randomNumber(7);
+  const num = getRandomIt(10);
+  const difference = getRandomIt(5);
+  const index = getRandomIt(7);
   // length of progression = 7
   const numbers = [];
   for (let i = 0; i <= 6; i += 1) {
