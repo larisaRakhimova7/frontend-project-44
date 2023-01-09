@@ -1,35 +1,38 @@
 import playGame from '../index.js';
-import getRandomIt from '../utils.js';
+import getRandomNumber from '../utils.js';
 
 const task = 'What is the result of the expression?';
-const checkCalc = () => {
-  const calc = [];
-  const num1 = getRandomIt();
-  const num2 = getRandomIt();
-  const arrayOperations = ['+', '-', '*'];
-  const operation = arrayOperations[getRandomIt(3) - 1];
-  const expression = `${num1} ${operation} ${num2}`;
-  calc.push(expression);
-  let trueAnswer;
+const checkCalc = (num1, num2, operation) => {
+  let correctAnswer;
   switch (operation) {
     case '+':
-      trueAnswer = num1 + num2;
+      correctAnswer = num1 + num2;
       break;
     case '-':
-      trueAnswer = num1 - num2;
+      correctAnswer = num1 - num2;
       break;
     case '*':
-      trueAnswer = num1 * num2;
+      correctAnswer = num1 * num2;
       break;
     default:
-      return 'error';
+      throw new Error(`Unknown order state: '${operation}'!`);
   }
-  const trueAnswerString = String(trueAnswer);
-  calc.push(trueAnswerString);
+  return String(correctAnswer);
+};
+const playCalc = () => {
+  const calc = [];
+  const num1 = getRandomNumber();
+  const num2 = getRandomNumber();
+  const arrayOperations = ['+', '-', '*'];
+  const operation = arrayOperations[getRandomNumber(0, 3) - 1];
+  const expression = `${num1} ${operation} ${num2}`;
+  calc.push(expression);
+  const correctAnswer = checkCalc(num1, num2, operation);
+  calc.push(correctAnswer);
   return calc;
 };
 const startCalc = () => {
-  playGame(checkCalc, task);
+  playGame(playCalc, task);
 };
 
 export default startCalc;

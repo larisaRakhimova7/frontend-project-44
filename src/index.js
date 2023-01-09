@@ -6,13 +6,13 @@ const playGame = (game, task) => {
   console.log(`Hello, ${userName}!`);
 
   console.log(task);
-  for (let i = 1; i <= 3; i += 1) {
-    const paramGame = game();
-    console.log(`Question: ${paramGame[0]}`);
-    const yourAnswer = readlineSync.question('Your answer: ');
-    const trueAnswer = paramGame[1];
-    if (trueAnswer !== yourAnswer) {
-      console.log(`'${yourAnswer}' is wrong answer ;(. Correct answer was '${trueAnswer}'.`);
+  const countOfGames = 3;
+  for (let i = 1; i <= countOfGames; i += 1) {
+    const [questionInGames, correctAnswer] = game();
+    console.log(`Question: ${questionInGames}`);
+    const userAnswer = readlineSync.question('Your answer: ');
+    if (correctAnswer !== userAnswer) {
+      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
       console.log(`Let's try again, ${userName}!`);
       return false;
     }

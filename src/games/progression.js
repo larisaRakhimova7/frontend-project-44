@@ -1,28 +1,33 @@
 import playGame from '../index.js';
-import getRandomIt from '../utils.js';
+import getRandomNumber from '../utils.js';
 
 const task = 'What number is missing in the progression?';
 
-const checkProgression = () => {
-  const dataProgression = [];
-  const num = getRandomIt(10);
-  const difference = getRandomIt(5);
-  const index = getRandomIt(7);
-  // length of progression = 7
-  const numbers = [];
-  for (let i = 0; i <= 6; i += 1) {
-    numbers.push(num + difference * i);
+const createProgression = (countOfMembers) => {
+  const num = getRandomNumber(0, 10);
+  const difference = getRandomNumber(0, 5);
+  const members = [];
+  for (let i = 0; i <= countOfMembers - 1; i += 1) {
+    members.push(num + difference * i);
   }
-  const trueAnswer = String(numbers[index - 1]);
-  numbers[index - 1] = '..';
-  const expression = `${numbers[0]} ${numbers[1]} ${numbers[2]} ${numbers[3]} ${numbers[4]} ${numbers[5]} ${numbers[6]}`;
+  return members;
+};
+
+const playProgression = () => {
+  const progression = [];
+  const countOfMembers = 7;
+  const index = getRandomNumber(0, countOfMembers);
+  const members = createProgression(0, countOfMembers);
+  const correctAnswer = String(members[index - 1]);
+  members[index - 1] = '..';
+  const expression = members.join(' ');
   const expressionString = String(expression);
-  dataProgression.push(expressionString);
-  dataProgression.push(trueAnswer);
-  return dataProgression;
+  progression.push(expressionString);
+  progression.push(correctAnswer);
+  return progression;
 };
 const startProgression = () => {
-  playGame(checkProgression, task);
+  playGame(playProgression, task);
 };
 
 export default startProgression;
