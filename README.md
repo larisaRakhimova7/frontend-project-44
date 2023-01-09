@@ -25,42 +25,52 @@ Demonstrations.
 
 [![asciicast](https://asciinema.org/a/550406.svg)](https://asciinema.org/a/550406)
 
-* Brain-even. Loss
+1. Brain-even - determining an even or odd number.
+to select use the brain-even command in your terminal.
+* Example . Loss
 
 [![asciicast](https://asciinema.org/a/550408.svg)](https://asciinema.org/a/550408)
 
-* Brain-even. Win
+* Example. Brain-even. Win
 
 [![asciicast](https://asciinema.org/a/550407.svg)](https://asciinema.org/a/550407)
 
-* Brain-calc. Loss
+2. Brain-calc -Brain-calc - сalculating of result for an expression.
+to select use the brain-calc command in your terminal.
+* Example. Brain-calc. Loss
 
 [![asciicast](https://asciinema.org/a/550410.svg)](https://asciinema.org/a/550410)
 
-* Brain-calc. Win
+* Example. Brain-calc. Win
 
 [![asciicast](https://asciinema.org/a/550409.svg)](https://asciinema.org/a/550409)
 
-* Brain-GCD. Loss
+3. Brain-gcd - finding of greatest common divisor for given numbers
+to select brain-gcd use the brain-gcd command in your terminal.
+* Example. Brain-gcd. Loss
 
 [![asciicast](https://asciinema.org/a/550411.svg)](https://asciinema.org/a/550411)
 
-* Brain-GCd. Win
+* Example. Brain-Gcd. Win
 
 [![asciicast](https://asciinema.org/a/550412.svg)](https://asciinema.org/a/550412)
 
-* Brain-progression. Loss
+4. Brain-progression - searching for missing number in progression
+to select use the brain-progression command in your terminal. 
+* Example. Brain-progression. Loss
 
 [![asciicast](https://asciinema.org/a/550413.svg)](https://asciinema.org/a/550413)
 
-* Brain-progression. Win
+* Example. Brain-progression. Win
 
 [![asciicast](https://asciinema.org/a/550414.svg)](https://asciinema.org/a/550414)
 
-* Brain-prime. Loss
+5. Brain-prime - checking for a prime number.
+to select use the brain-prime command in your terminal. 
+* Example.Brain-prime. Loss
 
 [![asciicast](https://asciinema.org/a/550415.svg)](https://asciinema.org/a/550415)
 
-* Brain-prime.Win
+* Example. Brain-prime.Win
 
 [![asciicast](https://asciinema.org/a/550416.svg)](https://asciinema.org/a/550416)
