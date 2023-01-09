@@ -27,7 +27,7 @@ Demonstrations.
 
 1. Brain-even - determining an even or odd number.
 to select use the brain-even command in your terminal.
-* Example . Loss
+* Example . Brain-even. Loss
 
 [![asciicast](https://asciinema.org/a/550408.svg)](https://asciinema.org/a/550408)
 
