@@ -3,28 +3,24 @@ import getRandomNumber from '../utils.js';
 
 const task = 'What number is missing in the progression?';
 
-const createProgression = (countOfMembers) => {
-  const num = getRandomNumber(0, 10);
-  const difference = getRandomNumber(0, 5);
+const getProgression = (start = 1, countOfMembers = 5, difference = 2) => {
   const members = [];
   for (let i = 0; i <= (countOfMembers - 1); i += 1) {
-    members.push(num + difference * i);
+    members.push(start + difference * i);
   }
   return members;
 };
 
 const playProgression = () => {
-  const progression = [];
+  const start = getRandomNumber(0, 10);
+  const difference = getRandomNumber(0, 5);
   const countOfMembers = 7;
-  const index = getRandomNumber(0, countOfMembers);
-  const members = createProgression(countOfMembers);
-  const correctAnswer = String(members[index - 1]);
-  members[index - 1] = '..';
-  const expression = members.join(' ');
-  const expressionString = String(expression);
-  progression.push(expressionString);
-  progression.push(correctAnswer);
-  return progression;
+  const hiddenIndex = getRandomNumber(0, countOfMembers);
+  const members = getProgression(start, countOfMembers, difference);
+  const correctAnswer = String(members[hiddenIndex - 1]);
+  members[hiddenIndex - 1] = '..';
+  const question = String(members.join(' '));
+  return [question, correctAnswer];
 };
 const startProgression = () => {
   playGame(playProgression, task);

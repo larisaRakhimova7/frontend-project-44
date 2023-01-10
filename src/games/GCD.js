@@ -16,15 +16,13 @@ const getGCD = (num1, num2) => {
     }
   } return String(divisor);
 };
+
 const playGCD = () => {
-  const GCD = [];
-  const num1 = getRandomNumber();
-  const num2 = getRandomNumber();
-  const expression = `${num1} ${num2}`;
-  GCD.push(expression);
-  const correctAnswer = getGCD(num1, num2);
-  GCD.push(correctAnswer);
-  return GCD;
+  const first = getRandomNumber();
+  const second = getRandomNumber();
+  const question = `${first} ${second}`;
+  const correctAnswer = getGCD(first, second);
+  return [question, correctAnswer];
 };
 
 const startGCD = () => {

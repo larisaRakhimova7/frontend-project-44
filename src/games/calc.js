@@ -2,34 +2,27 @@ import playGame from '../index.js';
 import getRandomNumber from '../utils.js';
 
 const task = 'What is the result of the expression?';
-const checkCalc = (num1, num2, operation) => {
-  let correctAnswer;
+
+const calculate = (num1, num2, operation) => {
   switch (operation) {
     case '+':
-      correctAnswer = num1 + num2;
-      break;
+      return num1 + num2;
     case '-':
-      correctAnswer = num1 - num2;
-      break;
+      return num1 - num2;
     case '*':
-      correctAnswer = num1 * num2;
-      break;
+      return num1 * num2;
     default:
       throw new Error(`Unknown order state: '${operation}'!`);
   }
-  return String(correctAnswer);
 };
 const playCalc = () => {
-  const calc = [];
-  const num1 = getRandomNumber();
-  const num2 = getRandomNumber();
-  const arrayOperations = ['+', '-', '*'];
-  const operation = arrayOperations[getRandomNumber(0, 3) - 1];
-  const expression = `${num1} ${operation} ${num2}`;
-  calc.push(expression);
-  const correctAnswer = checkCalc(num1, num2, operation);
-  calc.push(correctAnswer);
-  return calc;
+  const first = getRandomNumber();
+  const second = getRandomNumber();
+  const operators = ['+', '-', '*'];
+  const operator = operators[getRandomNumber(0, operators.length - 1)];
+  const question = `${first} ${operator} ${second}`;
+  const correctAnswer = calculate(first, second, operator).toString();
+  return [question, correctAnswer];
 };
 const startCalc = () => {
   playGame(playCalc, task);
