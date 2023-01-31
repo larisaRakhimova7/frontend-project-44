@@ -16,10 +16,10 @@ const playProgression = () => {
   const difference = getRandomNumber(0, 5);
   const countOfMembers = 7;
   const hiddenIndex = getRandomNumber(0, countOfMembers);
-  const members = getProgression(start, countOfMembers, difference);
-  const correctAnswer = String(members[hiddenIndex - 1]);
-  members[hiddenIndex - 1] = '..';
-  const question = String(members.join(' '));
+  const progression = getProgression(start, countOfMembers, difference);
+  const correctAnswer = String(progression[hiddenIndex - 1]);
+  progression[hiddenIndex - 1] = '..';
+  const question = String(progression.join(' '));
   return [question, correctAnswer];
 };
 const startProgression = () => {
