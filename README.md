@@ -11,7 +11,6 @@ To install "Brain-games", you need:
 * git clone https://github.com/seenerve/frontend-project-44
 * cd frontend-project-44
 * make install
-* npm ci
 * Choose your game.
 
 Demonstrations.
